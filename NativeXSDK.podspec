@@ -6,11 +6,12 @@ Pod::Spec.new do |s|
   s.homepage = 'http://www.flurry.com'
   s.author   = { 'NativeX' => 'http://www.nativex.com' }
   s.source   = { :git => 'https://github.com/ninjafishstudios/NativeXSDK.git', :tag => '5.0.3' }
-  s.description = 'NativeXSDK for ad publishing.'
+  s.description = 'NativeXSDK for publishing interstial and video ads.'
   s.platform = :ios
   s.source_files   = 'Classes/**/*.h'
   s.preserve_paths = 'Classes/**/*.a'
   s.library    = 'NativeXSDK', 'sqlite3'
   s.xcconfig   =  { 'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/NativeXSDK/Classes"' }
-
+  s.frameworks = 'MediaPlayer', 'SystemConfiguration', 'UIKit', 'Security', 'CoreGraphics', 'Foundation', 'MessageUI', 'StoreKit'
+  s.weak_frameworks = 'AdSupport'
 end
