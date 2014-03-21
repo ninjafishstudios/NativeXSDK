@@ -12,6 +12,5 @@ Pod::Spec.new do |s|
   s.preserve_paths = 'Classes/**/*.a'
   s.library    = 'NativeXSDK', 'sqlite3'
   s.xcconfig   =  { 'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/NativeXSDK/Classes"' }
-  s.frameworks = 'SystemConfiguration', 'UIKit', 'Security', 'CoreGraphics', 'Foundation', 'MessageUI', 'StoreKit', 'MediaPlayer'
-  s.weak_frameworks = 'AdSupport'
+
 end
